@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">        
+        <div class="header">
+            <div class="title">
+                <h1>Todo List</h1>
+            </div>
+            <form action="#" class="search-form">
+                <input type="text" class="input__search-form">
+                <button type="submit" class="button__search-form">Поиск</button>
+            </form>
+        </div>
+        <div class="body">
+            <div class="todo">
+                <p>Todo</p>
+                <div class="todo-list">
+                    <ul class="todo-list_ul"></ul>
+                </div>           
+                <div class="add__todo">
+                    <button name="button" class="open-modal__todo">Добавить +</button>
+                </div>
+            </div>
+            <div class="done">
+                <p>Done</p>
+                <div class="done-list">
+                    <button name="deleteAll"  class="deleteAllBtn">Clean all</button>
+                    <ul class="done-list_ul">                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal__body">
+            <div class="modal__content">
+                <a href="" class="modal__close">&times;</a>
+                <div class="modal__title">Что нужно сделать ?</div>
+                <form action="#" class="modal__form">
+                    <input type="text" class="modal__input" placeholder="Писать тут">
+                    <button type="submit" class="modal__btn">Записать</button>                    
+                </form>
+                
+            </div>
+        </div>
+    </div>    
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
