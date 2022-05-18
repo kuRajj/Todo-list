@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/editModal.css">
+    <link rel="stylesheet" href="/css/Modal.css">
     
     
     <title>Document</title>
@@ -49,14 +51,28 @@
                 <form action="#" class="modal__form">
                     <input type="text" class="modal__input" placeholder="Писать тут">
                     <button type="submit" class="modal__btn">Записать</button>                    
-                </form>
-                
+                </form>                
             </div>
         </div>
-    </div>    
+    </div>
+    <div id="editModal" class="editModal">
+        <div class="editmodal__body">
+            <div class="editModal__content">
+                <a href="" class="editModal__close">&times;</a>
+                <div class="editModal__title">Давай что нибудь поменяем ?</div>
+                <form action="#" class="editModal__form">
+                    <input type="text" class="editModal__input" placeholder="Писать тут">
+                    <button type="submit" class="editModal__btn">Заменить</button>                    
+                </form>                
+            </div>
+        </div>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
+
+
 
 
 
