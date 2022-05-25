@@ -203,12 +203,6 @@ deleteLi();
 deleDonelist();
 popupOpen();
 
-
-
-
-
-
-
 //search
 document.querySelector('.input__search-form').oninput = function () {
     let value = this.value.trim();
