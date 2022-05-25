@@ -223,6 +223,8 @@ document.querySelector('.input__search-form').oninput = function () {
         }
 };    
 
+
+
 deleteLi();
 deleDonelist();
 popupOpen();
