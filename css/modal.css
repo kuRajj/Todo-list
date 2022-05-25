@@ -22,6 +22,7 @@
 }
 .open-modal__todo:hover{
     background-color:rgba(113, 255, 121, 0.7);
+    border: 3px solid rgb(51, 211, 104);
 }
 
 .modal__body {
