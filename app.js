@@ -93,7 +93,8 @@ function editModalClosed() {
 addBtnModal.addEventListener('click', (event) => {
     event.preventDefault();
     const newTodoLi = addInputModal.value;
-    if (addInputModal.value != '' && addInputModal.value != null && addInputModal.value != undefined ) {
+    if (addInputModal.value != '' && addInputModal.value != null && 
+        addInputModal.value != undefined ) {
 
         let li = document.createElement('li');
         let span = document.createElement('span');
@@ -198,15 +199,27 @@ addBtnModal.addEventListener('click', (event) => {
     };
     dragAndDrop();    
 });
+
+//search
+document.querySelector('.input__search-form').oninput = function () {
+    let value = this.value.trim();
+    let list = document.querySelectorAll('.body li');
+    if (value != '') {
+        list.forEach(function (elem) {
+            if (elem.innerText.search(value) == -1) {
+                elem.classList.add('hide');
+            }
+            else {
+                elem.classList.remove('hide');
+            }
+        });
+    } else {
+        list.forEach(function (elem) {         
+              elem.classList.remove('hide');      
+        });
+        }
+};    
+
 deleteLi();
 deleDonelist();
 popupOpen();
-
-
-
-
-
-
-
-
-
