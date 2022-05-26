@@ -52,6 +52,7 @@ closeModal.addEventListener('click', (e) => {
 });  
 
 modalBody.addEventListener('click', (e) => {
+    e.preventDefault();
     if (!e.target.closest('.modal__content')) {
         popupClosed();
     }
@@ -74,6 +75,7 @@ closeeditModal.addEventListener('click', (e) => {
 });  
 
 editmodalBody.addEventListener('click', (e) => {
+    e.preventDefault();
     if (!e.target.closest('.editModal__content')) {
         editModalClosed();
     }
