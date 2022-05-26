@@ -201,10 +201,6 @@ addBtnModal.addEventListener('click', (event) => {
     };
     dragAndDrop();    
 });
-deleteLi();
-deleDonelist();
-popupOpen();
-
 //search
 document.querySelector('.input__search-form').oninput = function () {
     let value = this.value.trim();
@@ -223,9 +219,7 @@ document.querySelector('.input__search-form').oninput = function () {
               elem.classList.remove('hide');      
         });
         }
-};    
-
-
+};  
 
 deleteLi();
 deleDonelist();
