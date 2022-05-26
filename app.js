@@ -211,7 +211,7 @@ document.querySelector('.input__search-form').oninput = function () {
     let list = document.querySelectorAll('.body li');
     if (value != '') {
         list.forEach(function (elem) {
-            if (elem.innerText.search(value) == -1) {
+            if (elem.innerText.search((RegExp(value,"gi"))) == -1) {
                 elem.classList.add('hide');
             }
             else {
