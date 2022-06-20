@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 @font-face {
     font-family: 'ScriptS';
-    src: url('/fonst/ofont.ru_ScriptS.ttf');
+    src: url('/fonts/ofont.ru_ScriptS.ttf');
 }
 body {
     background-color: rgb(233, 233, 233);
@@ -38,6 +38,7 @@ body {
 }
 h1 {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .search-body{
@@ -125,12 +126,14 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 40px;
+    cursor: pointer;
 }
 .done p{
     margin-top: 20px;
     display: flex;
     justify-content: center;
     font-size: 40px;
+    cursor: pointer;
 }
 .todo-list_ul li{
     padding: 50px 20px 0px 20px;    
@@ -214,6 +217,10 @@ h1 {
 .editBtn:hover {
     opacity: 1;
     background-color: rgb(255, 213, 98);
+}
+
+.todo-list__li {
+    word-break: break-all;
 }
 
 
